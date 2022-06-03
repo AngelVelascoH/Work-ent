@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Source+Serif+4&display=swap");
+:root {
+  --primaryTextColor: white;
+  --secondaryTextColor: #0f55cc;
+  --tertiaryTextColor: #000000;
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Source Serif 4", serif;
+  --light-weigth: 200;
+  --regular-weigth: 400;
+  --bold-weigth: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #242424;
+  color: var(--primaryTextColor);
+  width: 100%;
+  height: 100vh;
+}
+.scroller-container {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.banner-area {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../Images/banner.jpg);
+  background-size: cover;
+}
+.content-area {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+  font-family: var(--primaryFont);
+}
+.content h1 span {
+  color: var(--secondaryTextColor);
+}
+#explore-btn {
+  background: none;
+  color: var(--primaryTextColor);
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: var(--primaryTextColor) 1px solid;
+  transition: all 0.3s ease-in;
+}
+
+#explore-btn:hover {
+  background-color: var(--secondaryTextColor);
+  border: var(--secondaryTextColor) 1px solid;
+}
+
+#navbarNav a {
+  font-family: var(--primaryFont);
+  font-weight: var(--bold-weigth);
+  color: var(--primaryTextColor);
+  transition: color 0.2s;
+}
+#navbarNav .link:hover {
+  color: var(--secondaryTextColor);
+}
+#join-btn {
+  background: none;
+  border: var(--secondaryTextColor) 1px solid;
+  border-radius: 5px;
+  padding-inline: 20px;
+  transition: background-color 0.2s linear !important;
+}
+#join-btn:hover {
+  background-color: var(--secondaryTextColor);
+}
+section {
+  scroll-snap-align: start;
+}
+.workent-info {
+  background-color: var(--secondaryTextColor);
+  width: 100%;
+  height: 100vh;
+}
+.workent-info > .container {
+  padding-top: 150px;
+}
+.services-slider {
+  width: 100%;
+  height: 500px;
+}
+.media-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.snap-inline {
+  scroll-snap-type: inline mandatory;
+}
+.snap-inline > * {
+  scroll-snap-align: start;
+}
+.media-scroller::-webkit-scrollbar {
+  width: 2px;
+}
+
+.media-scroller::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border-left: 0;
+  border-right: 0;
+  background-color: var(--primaryTextColor);
+}
+
+.service-card {
+  height: 500px;
+  display: flex;
+  padding: 50px;
+}
+.cards {
+  width: 100%;
+  border: none;
+  background-color: var(--primaryTextColor);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: relative;
+  color: var(--tertiaryTextColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+.cards h1 {
+  color: var(--primaryTextColor);
+  position: absolute;
+}
+.info {
+  width: 100%;
+  height: 100vh;
+}
+.testimonials {
+  background-color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.more-info {
+  background-color: var(--tertiaryTextColor);
+  width: 100%;
+  height: 50%;
+}
+
+.test-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+  aspect-ratio: 1/1;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230f55cc' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230f55cc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+@media (max-width: 992px) {
+  #navbarNav * {
+    font-size: 1.2em;
+  }
+  #join-btn {
+    padding-inline: 0;
+    border: none;
+  }
+  #join-btn:hover {
+    color: var(--secondaryTextColor);
+    background-color: transparent !important;
+  }
+}

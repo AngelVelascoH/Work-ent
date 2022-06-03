@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work-Ent</title>
+
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="scroller-container">
+      <!-- Navbar -->
+      <section>
+        <div class="banner-area">
+          <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+              <a class="navbar-brand" href="#"
+                ><img src="Images/logo.png" alt="Work-ent" width="100px" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-5 link" href="#"
+                      >Trabaja en WorkEnt</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-5 link" href="#">Iniciar sesión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="join-btn" class="nav-link mx-lg-5" href="#">Únete</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="content-area">
+            <div class="content">
+              <h1>
+                CONECTANDO <span>TRABAJADORES</span> Y <span>CLIENTES</span>
+              </h1>
+              <p>Encuentra los servicios que necesitas.</p>
+              <button id="explore-btn">Explora los servicios</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workent-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center text-capitalize">
+              <h2>Los servicios que puedes encontrar en WorkEnt</h2>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="row pt-lg-5">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 services-slider container">
+                <div class="row">
+                  <div class="media-scroller snap-inline col-12">
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/carpintero.jpg" alt="carpintero" />
+                        <h1>Carpinteros</h1>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/herrero.jpg" alt="herrero" />
+                        <h1>Herreros</h1>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/construccion.jpg" alt="constructor" />
+                        <h1>Constructores</h1>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/mecanico.jpg" alt="mecanico" />
+                        <h1>Mecánicos</h1>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/sastre.jpg" alt="sastre" />
+                        <h1>Sastres</h1>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="cards">
+                        <img src="/Images/estilista.jpg" alt="estilista" />
+                        <h1>Estilistas</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <section class="testimonials">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>
+                  WorkEnt me ha ayudado a conseguir muchos más clientes de los
+                  que conseguía con la promoción local.
+                </h2>
+                <img
+                  src="Images/testimonial1.jpg"
+                  alt="testimonial"
+                  class="test-img"
+                />
+                <em>Juan,electricista - CDMX</em>
+              </div>
+              <div class="carousel-item">
+                <h2>
+                  Me encanta que puedo conseguir clientes que aceptan mis
+                  precios y visualizan mi trabajo.
+                </h2>
+                <img
+                  src="Images/testimonial2.jpg"
+                  alt="testimonial2"
+                  class="test-img"
+                />
+                <em>Javier, carpinero - Sinaloa</em>
+              </div>
+              <div class="carousel-item">
+                <h2>
+                  El sistema de calificaciones me ha ayudado mucho a conseguir
+                  nuevos prospectos.
+                </h2>
+                <img
+                  src="Images/testimonial3.jpg"
+                  alt="testimonial3"
+                  class="test-img"
+                />
+                <em>Amanda, estilista - Guerrero </em>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="more-info">Info</section>
+      </section>
+    </div>
+    <!-- Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
