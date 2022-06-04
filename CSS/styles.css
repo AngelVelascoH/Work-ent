@@ -16,28 +16,33 @@
 }
 html {
   scroll-behavior: smooth;
+  height: -webkif-fill-available;
 }
 body {
   color: var(--primaryTextColor);
   width: 100%;
   height: 100vh;
+  height: -webkif-fill-available;
   font-family: var(--primaryFont);
 }
 .scroller-container {
   width: 100%;
   height: 100vh;
+  height: -webkif-fill-available;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 .banner-area {
   width: 100%;
   height: 100vh;
+  height: -webkif-fill-available;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../Images/banner.jpg);
   background-size: cover;
 }
 .content-area {
   height: 75vh;
+  height: -webkif-fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +95,7 @@ section {
   background-color: var(--secondaryTextColor);
   width: 100%;
   height: 100vh;
+  height: -webkif-fill-available;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -133,6 +139,7 @@ section {
 
 .service-card {
   height: 60vh;
+  height: -webkif-fill-available;
   display: flex;
   padding: 50px;
 }
@@ -163,6 +170,7 @@ section {
 .info {
   width: 100%;
   height: 100vh;
+  height: -webkif-fill-available;
 }
 .testimonials {
   background-color: var(--primaryTextColor);
