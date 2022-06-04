@@ -22,6 +22,7 @@ body {
   color: var(--primaryTextColor);
   width: 100%;
   height: 100vh;
+  font-family: var(--primaryFont);
 }
 .scroller-container {
   width: 100%;
@@ -171,6 +172,12 @@ section {
   height: 50%;
 }
 
+.quote {
+  padding-inline: 30px;
+}
+.quote-container {
+  height: 100%;
+}
 .test-img {
   width: 10%;
   border-radius: 100%;
@@ -188,6 +195,7 @@ section {
 .carousel-item {
   padding: 7% 15%;
 }
+
 @media (max-width: 992px) {
   #navbarNav * {
     font-size: 1.2em;
@@ -200,4 +208,15 @@ section {
     color: var(--secondaryTextColor);
     background-color: transparent !important;
   }
+  .media-scroller {
+    grid-auto-columns: 100%;
+  }
+  .carousel {
+    padding-top: 80px;
+  }
 }
+@media (max-width: 500px) {
+  .carousel {
+    padding-top: 100px;
+  }
+} ;
