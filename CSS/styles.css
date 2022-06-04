@@ -132,12 +132,13 @@ section {
 }
 
 .service-card {
-  height: 500px;
+  height: 60vh;
   display: flex;
   padding: 50px;
 }
 .cards {
   width: 100%;
+  height: auto;
   border: none;
   background-color: var(--primaryTextColor);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -244,8 +245,5 @@ section {
   }
   .test-img {
     display: none;
-  }
-  .service-card {
-    height: 350px;
   }
 }
