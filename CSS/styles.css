@@ -211,11 +211,34 @@ section {
     grid-auto-columns: 100%;
   }
   .carousel {
-    padding-top: 80px;
+    padding-top: 4em;
+  }
+  .test-img {
+    width: 20%;
+  }
+  .media-scroller {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+  }
+  .media-scroller {
   }
 }
-@media (max-width: 500px) {
+@media (max-height: 900px) {
   .carousel {
-    padding-top: 100px;
   }
-} ;
+  .test-img {
+    width: 15%;
+  }
+}
+@media (max-height: 700px) {
+  .carousel {
+    padding-top: 3em;
+  }
+  .test-img {
+    display: none;
+  }
+  .service-card {
+    height: 350px;
+  }
+}
