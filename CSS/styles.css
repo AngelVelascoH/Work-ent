@@ -234,7 +234,7 @@ section {
   }
   .arrow-mobile {
     opacity: 1;
-    padding-bottom: 20px;
+    padding-bottom: calc(10px + (100vh - 100%));
   }
   .service-card {
     padding: 0 50px 0 50px;
