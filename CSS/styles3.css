@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Source+Serif+4&display=swap");
+:root {
+  --primaryTextColor: white;
+  --secondaryTextColor: #0f55cc;
+  --tertiaryTextColor: #000000;
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Source Serif 4", serif;
+  --light-weigth: 200;
+  --regular-weigth: 400;
+  --bold-weigth: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--secondaryTextColor);
+}
+.main-container {
+  background-color: var(--secondaryTextColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20vw;
+}
+a {
+  font-family: var(--primaryFont);
+  font-weight: var(--bold-weigth);
+  color: var(--primaryTextColor);
+  transition: color 0.2s;
+}
+.login-btn {
+  background-color: none;
+  border: 1px solid var(--primaryTextColor);
+  border-radius: 20px;
+  padding-inline: 15px;
+  padding-block: 5px;
+  transition: all, color 0.2s linear !important;
+}
+.login-btn:hover {
+  background-color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  gap: 200px;
+}
+.text {
+  padding-block-start: 150px;
+  padding-inline-start: 200px;
+  width: 40%;
+  color: var(--primaryTextColor);
+  font-family: var(--primaryFont);
+  font-weight: var(--bold-weigth);
+  font-size: 1.2em;
+}
+.text h4 {
+  font-weight: var(--regular-weigth);
+}
+.register-form {
+  background-color: var(--primaryTextColor);
+  width: 500px;
+  height: 700px;
+  padding-inline: 30px;
+  margin-block-start: 50px;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.6) 5px 5px,
+    rgba(255, 255, 255, 0.5) 10px 10px, rgba(255, 255, 255, 0.3) 15px 15px,
+    rgba(25, 255, 255, 0.2) 20px 20px, rgba(255, 255, 255, 0.1) 25px 25px;
+}
+.register-form h1 {
+  color: var(--secondaryTextColor);
+  text-align: left;
+  padding-block-start: 1em;
+  font-family: var(--primaryFont);
+  font-size: 1.5em;
+  padding-block-end: 1.2em;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
+  padding-block-end: 20px;
+}
+.name-input {
+  display: flex;
+  gap: 10%;
+  width: 440px;
+}
+.name-input input {
+  width: 50%;
+}
+.submit-btn {
+  width: 100%;
+  background-color: var(--secondaryTextColor);
+  color: var(--primaryTextColor);
+  font-family: var(--primaryFont);
+  font-size: 1.2em;
+  height: 2.3em;
+  border: none;
+  opacity: 0.86;
+  transition: opacity 0.5s linear;
+  margin-top: 3em;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.input-field {
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid rgba(15, 85, 204, 0.1);
+  font-size: 1.2em;
+}
+.input-field:hover {
+  border-bottom: 2px solid var(--secondaryTextColor);
+}
+.input-field:focus {
+  border-bottom: 2px solid var(--secondaryTextColor);
+}
+.inputs {
+  padding-block-start: 30px;
+}
+.user-type-input {
+  padding-block-start: 1.3em;
+}
+form h4 {
+  color: var(--secondaryTextColor);
+  font-family: var(--primaryFont);
+  font-weight: var(--regular-weigth);
+  padding-top: 15px;
+}
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: var(--tertiaryTextColor);
+  background-color: var(--primaryTextColor);
+  background-image: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: var(--primaryFont);
+  opacity: 0.85;
+  text-align: left;
+  border: 1px solid transparent;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  border: none;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: var(--secondaryTextColor);
+}
+@media (max-width: 1300px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .text {
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 20px;
+    text-align: center;
+  }
+  .register-form {
+    width: 80%;
+    box-shadow: none;
+    margin-bottom: 50px;
+  }
+  .name-input {
+    width: 100%;
+  }
+  .user-type-input {
+    padding-block-end: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    padding-inline: 5vw;
+  }
+  .login-btn {
+    font-size: 1em;
+  }
+}
+@media (max-width: 400px) {
+  .login-btn {
+    font-size: 0.7em;
+  }
+  .logo {
+    width: 80px;
+  }
+}
