@@ -9,6 +9,13 @@
       src="https://kit.fontawesome.com/099efb5fef.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+      let vh = window.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      // We listen to the resize event
+    </script>
 
     <!-- Bootstrap CSS-->
     <link
@@ -214,10 +221,10 @@
             <div class="row align-items-center quote-container">
               <div class="col-12 quote text-center">
                 <h2>
-                  El trabajo más productivo es el que sale de las manos de un
-                  hombre contento
+                  "El trabajo más productivo es el que sale de las manos de un
+                  hombre contento"
                 </h2>
-                <em>"Victor Pauchet"</em>
+                <em>-Victor Pauchet</em>
               </div>
             </div>
           </div>

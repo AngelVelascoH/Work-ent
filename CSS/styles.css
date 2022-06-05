@@ -16,30 +16,32 @@
 }
 html {
   scroll-behavior: smooth;
-  height: -webkif-fill-available;
 }
 body {
   color: var(--primaryTextColor);
   width: 100%;
   height: 100vh;
-  height: -webkif-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
   font-family: var(--primaryFont);
 }
 .scroller-container {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 .banner-area {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../Images/banner.jpg);
   background-size: cover;
 }
 .content-area {
   height: 75vh;
+  height: calc(var(--vh, 1vh) * 75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +94,7 @@ section {
   background-color: var(--secondaryTextColor);
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -135,6 +138,7 @@ section {
 
 .service-card {
   height: 60vh;
+  height: calc(var(--vh, 1vh) * 60);
   display: flex;
   padding: 50px;
 }
@@ -165,6 +169,7 @@ section {
 .info {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .testimonials {
   background-color: var(--primaryTextColor);
@@ -234,10 +239,14 @@ section {
   }
   .arrow-mobile {
     opacity: 1;
-    padding-bottom: calc(10px + (100vh - 100%));
   }
   .service-card {
     padding: 0 50px 0 50px;
+  }
+  .scroller-container {
+    scroll-snap-type: none;
+
+    overflow-y: scroll;
   }
 }
 @media (max-height: 900px) {
