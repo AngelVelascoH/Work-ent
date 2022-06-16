@@ -17,6 +17,9 @@
 body {
   background-color: var(--secondaryTextColor);
 }
+.swal2-popup {
+  font-family: var(--primaryFont);
+}
 .main-container {
   background-color: var(--secondaryTextColor);
   height: 100vh;
@@ -38,12 +41,12 @@ a {
   transition: color 0.2s;
 }
 .login-btn {
-  background-color: none;
   border: 1px solid var(--primaryTextColor);
   border-radius: 20px;
   padding-inline: 15px;
   padding-block: 5px;
   transition: all, color 0.2s linear !important;
+  text-decoration: none;
 }
 .login-btn:hover {
   background-color: var(--primaryTextColor);
@@ -186,6 +189,61 @@ select::-ms-expand {
 .select:hover::after {
   color: var(--secondaryTextColor);
 }
+.register-result {
+  display: flex;
+  flex-direction: column;
+}
+.register-result > .submit-btn {
+  background-color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
+  border-radius: 30px;
+  text-decoration: none;
+  padding-inline: 20px;
+  padding-block: 5px;
+}
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-form2 {
+  background-color: var(--secondaryTextColor);
+
+  width: 500px;
+  height: 500px;
+  padding-inline: 30px;
+  margin-block-start: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.register-form2 h1 {
+  color: var(--primaryTextColor);
+  text-align: left;
+  padding-block-start: 1em;
+  font-family: var(--primaryFont);
+  font-size: 3em;
+  padding-block-end: 1.2em;
+}
+.register-form2 h2 {
+  color: var(--primaryTextColor);
+  text-align: left;
+  padding-block-start: 1em;
+  font-family: var(--primaryFont);
+  font-size: 2em;
+  padding-block-end: 1.2em;
+  font-size: 2em;
+}
+.servicios {
+  background-color: var(--primaryTextColor);
+  width: 500px;
+  height: 700px;
+  padding-inline: 30px;
+  margin-block-start: 50px;
+  border: none;
+}
 @media (max-width: 1300px) {
   .content {
     flex-direction: column;
@@ -198,7 +256,9 @@ select::-ms-expand {
     padding-inline: 20px;
     text-align: center;
   }
-  .register-form {
+  .register-form,
+  .servicios,
+  .register-form2 {
     width: 80%;
     box-shadow: none;
     margin-bottom: 50px;

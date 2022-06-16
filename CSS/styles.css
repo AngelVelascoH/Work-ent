@@ -77,6 +77,9 @@ body {
 #navbarNav .link:hover {
   color: var(--secondaryTextColor);
 }
+.content p {
+  padding-bottom: 20px;
+}
 #join-btn {
   background: none;
   border: var(--secondaryTextColor) 1px solid;
@@ -86,6 +89,9 @@ body {
 }
 #join-btn:hover {
   background-color: var(--secondaryTextColor);
+}
+a {
+  text-decoration: none !important;
 }
 section {
   scroll-snap-align: start;

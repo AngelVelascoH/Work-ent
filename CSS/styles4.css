@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Source+Serif+4&display=swap");
+:root {
+  --primaryTextColor: white;
+  --secondaryTextColor: #0f55cc;
+  --tertiaryTextColor: #000000;
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "Source Serif 4", serif;
+  --light-weigth: 200;
+  --regular-weigth: 400;
+  --bold-weigth: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  opacity: 0.66;
+  font-family: var(--primaryFont) !important;
+  color: var(--secondaryTextColor) !important;
+  transition: opacity 200ms linear !important;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.title {
+  font-family: var(--primaryFont);
+  color: var(--secondaryTextColor);
+}
+#join-btn {
+  opacity: 1;
+  background: none;
+  color: var(--secondaryTextColor);
+  border: var(--secondaryTextColor) 1px solid;
+  border-radius: 5px;
+  padding-inline: 20px;
+  transition: all 0.2s linear !important;
+}
+#join-btn:hover {
+  background-color: var(--secondaryTextColor);
+  color: var(--primaryTextColor) !important;
+}
+#add-service {
+  text-decoration: none !important;
+}
+.add-btn {
+  border: 3px solid var(--secondaryTextColor);
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--secondaryTextColor);
+  transition: all 0.2s linear;
+  cursor: pointer !important;
+}
+.add-btn i {
+  font-size: 2.5em;
+}
+.add-btn:hover {
+  background-color: var(--secondaryTextColor);
+  color: var(--primaryTextColor);
+}
+.card-img-top {
+  aspect-ratio: 16 / 9 !important;
+}
+div a {
+  text-decoration: none !important;
+}
+.activo {
+  background-color: rgba(166, 0, 0) !important;
+  border-color: rgba(166, 0, 0) !important;
+}
+.inactivo {
+  background-color: rgba(0, 89, 0) !important;
+  border-color: rgba(0, 89, 0) !important;
+}
